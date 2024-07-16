@@ -52,9 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2612" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.8.0" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.8.1" />
     <PackageReference Include="Xamarin.AndroidX.Annotation" Version="1.6.0.4" />
-    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="8.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
