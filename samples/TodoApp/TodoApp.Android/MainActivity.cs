@@ -46,8 +46,11 @@ namespace TodoApp.Android
             isBusyIndicator = FindViewById<ProgressBar>(Resource.Id.busy_indicator);
 
             // Set up the TodoService
-            TodoService = new RemoteTodoService();
-            
+            TodoService = new RemoteTodoService()
+            {
+                OfflineDb = Xamarin.Essentials.FileSystem.AppDataDirectory + "/offline.db"
+            };
+
             // Set up the List Adapter
             todoAdapter = new TodoAdapter(this);
             itemList.SetAdapter(todoAdapter);
